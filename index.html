@@ -1,27 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alteca.xyz</title>
+    <meta name="descrition"
+        content="Alteca.xyz is a tech blog full of helpful software reviews and programming tutorials">
+    <meta name="keywords"
+        content="tech blog, technology blog, programming blog, programming tutorials, Software reviews, tech review blog">
+    <link rel="stylesheet" href="style.css">
+    <title>Alteca.xyz - Tech blog</title>
 </head>
+
 <body>
-    <div>
-    <h1>Website is under construction</h1>
-    </div>  
-<style>
-    *{background-color:#000;}
-    h1 {
-        font-size: 50px;
-        color: white;
-    }
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
-    
+    <header id="homeheader">
+        <nav>
+
+            <div class="flex" id="nav" >
+                <div id="logo">
+                    <a href="index.html"><img src="Page-Images/BeFunky-design-removebg-preview.png" alt="Logo"
+                        class="logo"></a>
+                </div>
+             <div id="desktop-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                </ul>
+             </div>
+             <div id="mobile-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                </ul>
+             </div>
+                
+                <div id="sandwich">
+                    <a href="javascript:void(0);" onclick="toggleSandwichMenu()">
+                      <img src="Images/menu.svg" alt="hamburger-menu" width="24px"></a>
+                  </div>
+            </div>
+
+        </nav>
+        <div id="flexheader">
+            <div id="stack">
+                <img src="Page-Images/Stack.svg" alt="Stack Image" width="250px">
+            </div>
+            <div id="cta">
+                <h1>Explore helpful programming tutorials and software reviews</h1>
+                <h4>Discover a new exciting world of helpful coding tutorials, software reviews and other engaging
+                    content
+                </h4>
+                <a href="blog.html"><button id="ctabtn">Start Reading</button></a>
+            </div>
+            
+        </div>
+    </header>
+    <main id="home">
+        <h2>About Me</h2>
+        <section>
+            <h3>My Story</h3>
+            <p>I am a web developer and blogger who has coded for over 2 years. I live in Vienna and am still a
+                teen. Though I am still a teen I write this blog for over 6 months now and will make other amazing
+                projects in the future and am learning JavaScript</p>
+
+            <div class="cont">
+                <button class="readmore">Read More</button>
+            </div>
+        </section>
+        <h2>Blog</h2>
+        <section>
+            <h3>Why I blog</h3>
+            <p>I love to write about my passion which is to code things and make websites using HTML CSS and JavaScript
+            </p>
+        </section>
+        <section>
+            <h3>Topics</h3>
+            <div class="topics">
+            <p>Programming</p>
+            <p>Software Reviews</p>
+            <p>AI</p>
+        </div>
+
+        </section>
+        <section>
+            <h3>New Posts</h3>
+            <div class="post">
+                <a href="Intro to Scratch.html"><h3>Intro to Scratch</h3></a>
+                <div class="desc">A great beginners guide to Scratch for you to master the basics of the art of making computer programs
+                </div>
+            </div>
+            <div class="post">
+                <a href="Chrome alternatives.html"><h3>Chrome Alternatives</h3></a>
+                <div class="desc">If you're looking for a browser other than Chrome and don't know where to start this is the perfect beginner's guide
+                </div>
+            </div>
+            <div class="post">
+                <a href="Top-5-Website-builders.html"><h3>Top 5 Website Builders in 2023</h3></a>
+                 <div class="desc">A compilation of the best website builders out there </div>
+             </div>
+             <div class="post">
+                <a href="Best Blogging Platforms for devs.html"><h3>Best Blogging Platforms for Developers</h3></a>
+                <div class="desc">A detailed guide on the best blogging platforms for developers, which one to choose and why</div>
+            </div>
+            <div class="post">
+                <a href="Html tags.html"><h3>All HTML tags explained</h3></a>
+                 <div class="desc">A compilation of the most used HTML tags to give a good idea for what tag to use next </div>
+             </div>
+            <div class="post">
+                <a href="scratchaddons.html"><h3>Scratch Addons</h3></a>
+                 <div class="desc">A compilation of the best Scratch addons out there to supercharge you productivity</div>
+             </div>
+             <div class="cont">
+             <button class="readmore">See More Posts</button>
+            </div>
+        </section>
+        <h2>Social Media</h2>
+        <section>
+            <h3>X/Twitter</h3>
+            <p><a href="x.com/@Alteca_xyz">Alteca_xyz</a></p>
+            <h3>Scratch</h3>
+            <p><a href="scratch.mit.edu/Infinity-Creations">Infinity-Creations</a></p>
+            <h3>Hashnode</h3>
+            <p><a href="alteca.hashnode.dev">Alteca</a></p>
+        </section>
+
+        
+
+
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="alteca.hashnode.dev/"><p>Hashnode</p></a>
+            <a href="x.com/@Alteca_xyz/"><p>X</p></a>
+            <a href="scratch.mit.edu/@Infinity-Creations/"><p>Scratch</p></a>
+        </div>
+       
+    </footer>
+<script src="script.js" async defer></script>
 </body>
+
 </html>
