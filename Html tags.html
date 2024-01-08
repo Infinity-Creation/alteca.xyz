@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alteca.xyz - HTML tags explained</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="flex" id="nav" >
+                <div id="logo">
+                    <a href="index.html"><img src="Page-Images/BeFunky-design-removebg-preview.png" alt="Logo"
+                        class="logo"></a>
+                </div>
+             <div id="desktop-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                </ul>
+             </div>
+             <div id="mobile-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                </ul>
+             </div>
+                
+                <div id="sandwich">
+                    <a href="javascript:void(0);" onclick="toggleSandwichMenu()">
+                      <img src="Images/menu.svg" alt="hamburger-menu" width="24px"></a>
+                  </div>
+            </div>
+
+        </nav>
+    </header>
+    <div class="blog">
+    <h1>HTML Tags and their Functions</h1>
+   
+    <p>One of the most popular programming languages is as you probably know HTML which is a language that allows you to
+        create websites. In HTML you use elements called tags, each tag has a specific function for Example the h1 tag
+        is the main heading on a page. In this article you'll discover all the necessary tags and their functions. </p>
+    <h2>Semantic HTML</h2>
+    <h3>What is Semantic HTML</h3>
+    <p>Semantic HTML was introduced with Web 3.0 with it came many innovations to the existing HTML, semantic HTML makes
+        it easier to differentiate different components of a web page.</p>
+    <h3>Nav</h3>
+    <p>The nav tag is used to display that this is a navbar in a more readable way than making a .nav class.</p>
+    <pre>        <code>
+            &lt;nav&gt;
+                &lt;ul&gt;
+                &lt;/ul&gt; 
+            &lt;/nav&gt;
+        </code>
+    
+    </pre>
+    <h3>Header</h3>
+    <p>The header element is used to define that part of a page is the header section making the HTML more readable.</p>
+    <pre>    <code>
+        &lt;header&gt;
+
+            &lt;nav&gt;
+            &lt;/nav&gt;
+
+        &lt;/header&gt;
+    </code>
+   </pre>
+    <h3>Footer</h3>
+    <p>The footer element defines that part of a page is the footer making it more readable and saving work for web
+        devs.</p>
+    <pre>    <code>
+        &lt;footer&gt;
+
+            &lt;ul&gt;
+            &lt;/ul&gt; 
+
+        &lt;/footer&gt;
+    </code>
+   </pre>
+    <h3>Code</h3>
+    <p>The code tag displays a piece of text in the monospace font and also makes it easier to read because you don't
+        have to make a .code class. The code below will display the word "hello" in monospace.</p>
+    <pre>        <code>
+            &lt;code&gt;
+                Hello
+            &lt;/code&gt;
+        </code>
+    </pre>
+    <h3>Section</h3>
+    <p>The section tag signifies that there is a big section of code in it. Usually sections come before divs in the
+        hierarchy. Sections tend to have a class.</p>
+    <p>Here is an example of a section:</p>
+    <pre>        <code>
+            &lt;section class="exampleclass"&gt;&lt;/section&gt;
+        </code>
+    </pre>
+    <h2>Common Elements</h2>
+    <p>Common elements are HTML elements that are relevant to any websites, from one-pagers to giant business websites
+        these elements have their place in the website.</p>
+    <h3>Paragraph</h3>
+    <p>The Paragraph element is frequently used to display content on web pages and is very useful when writing blog
+        posts like this one. The followning code will display "Hello My Friend".</p>
+    <pre>        <code>
+            &lt;p&gt;Hello My Friend&lt;/p&gt;
+        </code>
+    </pre>
+    <h3>Headings</h3>
+    <p>The Heading tags display the different sized text on web pages. In total there are 6 headings: h1, h2, h3, h4, h5
+        and h6, but h5 and h6
+        aren't usually used that much.</p>
+    <pre>        <code>
+            &lt;h1&gt;Hello&lt;/h1&gt;
+            &lt;h2&gt;Hello&lt;/h2&gt;
+            &lt;h3&gt;Hello&lt;/h3&gt;
+            &lt;h4&gt;Hello&lt;/h4&gt;
+            &lt;h5&gt;Hello&lt;/h5&gt;
+            &lt;h6&gt;Hello&lt;/h6&gt;
+
+        </code>
+    </pre>
+    <h3>Divs</h3>
+    <p>Divs are the very core of HTML and structure it so that it is easier to navigate. Divs usually are given a class
+        or id
+        so that people can understand everything better.</p>
+    <p>Here is and example of a div:</p>
+    <pre>        <code>
+            &lt;div class="exampleclass"&gt;&lt;/div&gt;
+        </code>
+    </pre>
+    <h3>Lists</h3>
+    <p>Lists are defined by two ul or ol tags. Ul means that the list is unordered and ol means ordered. Inside the list
+        there are li tags</p>
+    <p> this is an unordered list:</p>
+    <pre>            <code>
+                &lt;ul&gt;
+                &lt;li&gt;Something&lt;/li&gt;
+                &lt;/ul&gt;
+            </code>
+        </pre>
+    <p>this is an ordered list:</p>
+    <pre>            <code>
+                &lt;ol&gt;
+                &lt;li&gt;Something&lt;/li&gt;
+                &lt;/ol&gt;
+            </code>
+        </pre>
+
+    <h2>Media</h2>
+    <p>Here you will learn how to place media into your website such as images, videos and links</p>
+    <h3>Anchor Tags</h3>
+    <p>Anchor tags are links that transfer the user to another webpage either an html file stored on the server or to
+        another url and domain.</p>
+    <p>This is an anchor tag linking internally:</p>
+    <pre>            <code>
+                &lt;a href="index.html"&gt;index.html&lt;/a&gt;
+            </code>
+        </pre>
+    <p>this is an anchor tag linking externally:</p>
+    <pre>            <code>
+                &lt;a href="https://google.com"&gt;google&lt;/a&gt;
+            </code>
+        </pre>
+    <h3>Videos</h3>
+    <p>Videos are fairly simple to display, write the video tag and then a src attribute inside it, I also recommend
+        having a width and a height attribute so that it won't go out of control.The &lt;video&gt; tag is a self closing
+        tag.</p>
+    <p>here is an example of a video:</p>
+    <pre>            <code>
+                &lt;video src="example.mp4"&gt;
+            </code>
+    </pre>
+    <h3>Images</h3>
+    <p>Images are very similar to videos in terms of syntax. Don't forget the height and width attributes.</p>
+    <p>Here is an example of an Image:</p>
+    <pre>        <code>
+            &lt;img src="example.jpeg"&gt;
+        </code>
+    </pre>
+    <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>With this in mind you are free to create the best webpage ever.</p>
+        <p>I hope you had a fun time reading :)</p>
+    </div>
+
+
+
+
+</div>
+<footer>
+    <div class="social">
+        <a href="alteca.hashnode.dev/"><p>Hashnode</p></a>
+        <a href="x.com/@Alteca_xyz/"><p>X</p></a>
+        <a href="scratch.mit.edu/@Infinity-Creations/"><p>Scratch</p></a>
+    </div>
+    
+</footer>
+<script src="script.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteca Introduction to Scratch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <nav>
+
+                <div class="flex" id="nav" >
+                    <div id="logo">
+                        <a href="index.html"><img src="Page-Images/BeFunky-design-removebg-preview.png" alt="Logo"
+                            class="logo"></a>
+                    </div>
+                 <div id="desktop-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                    </ul>
+                 </div>
+                 <div id="mobile-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                    </ul>
+                 </div>
+                    
+                    <div id="sandwich">
+                        <a href="javascript:void(0);" onclick="toggleSandwichMenu()">
+                          <img src="Images/menu.svg" alt="hamburger-menu" width="24px"></a>
+                      </div>
+                </div>
+    
+            </nav>
+        </header>
+    
+        <div class="blog">
+        <h1>Inroduction to Scratch</h1>
+        <h2>Learn how to code the simple way</h2>
+        <div id="Intro">
+            <p>In this course you will learn the basics of the programming language called
+                scratch. Throughout this course you will be making multiple games such as: a maze game,
+                a shooter game, and a flying game. In the course you will learn multiple programming tricks and you will get
+                to know
+                many famous scratchers and their works along the way.
+            </p>
+            <img src="Images/scratch_org.png" alt="the scratch logo">
+        </div>
+        <div id="interface">
+            <h2>The Scratch interface</h2>
+            <p>The scratch interface is pretty straitforward, there is a sprite pane which contains
+                all the objects in your scene view, a code area where you can drag in blocks from the block palette
+                and a sound and costume tabs. At the top of your project there is a "Save Now" button a few other options.
+                to run your scripts click on the green flag at the top of the stage and on the stop sign to stop the project
+                again.
+                To create a new Sprite (Object) click on the cat face with a plus and select one from the scratch sprite
+                library, or hover to
+                get the whole menu. The same thing for the stage. At the top of the sprite pane are the properties of the
+                sprite you're
+                currently looking at such as its visibility status or its position on the screen.
+    
+    
+            </p>
+            <img src="Images/scratch interface.png" alt="the scratch interface">
+            <div class="src">
+                <p>Source: <a href="https://en.scratch-wiki.info/wiki/User_Interface">Scratch Wiki</a></p>
+    
+            </div>
+        </div>
+        <div id="movesteps-turn-if-forever-flag">
+            <h2>The basics</h2>
+            <p>You will need the blocks I will show you now for basically the whole time you will be doing scratch.
+    
+    
+            </p>
+            <div class="move-block">
+                <h3>Move-block</h3>
+                <h4>Function</h4>
+                <p>The move block moves an object(sprite) in the direction it is facing. So if a red square had a direction
+                    of
+                    90 degrees the move block would move it right. Note that all sprites start facing 90 degrees, not 0,
+                    this can cause problems
+                    if you forget about this as many people often do. The steps input is not how many jumps the sprite will
+                    make
+                    but how many pixels it will travel. Some people can get that wrong and are really frustrated. The
+                    scratch team should
+                    have called the move block move pixels instead of move steps.
+                </p>
+                <h4>location</h4>
+                <p>The move block can be found at the very top of the motion category.</p>
+                <img src="Images/move-block.png" alt="the move block">
+    
+            </div>
+            <div class="turn">
+                <h3>Turn-block</h3>
+                <h4>Function</h4>
+                <p>the turn block's function is pretty easy to understand, the block turns the corresponding sprite a
+                    certain amount of degrees,
+                    note that the amount can be negative.
+                </p>
+                <h4>Location</h4>
+                <p>The turn block is located right under the move block in the motion category.</p>
+                <img src="Images/turn-block.png" alt="the turn block">
+            </div>
+            <div class="forever">
+                <h3>Forever</h3>
+                <h4>Function</h4>
+                <p>The forever block is a loop, it executes the commands inside it over and over again, but is not run
+                    forever, it runs until the
+                    project stops, and there are ways to stop forever loops but those are details and this course is an
+                    intro
+                    so you don't have to worry about that now.
+                    Common ways of using forever loops are counters, physics, and motion.
+                </p>
+                <h4>Location</h4>
+                <p>The forever loop is located in the middle of the controls category orange-brown blocks.</p>
+                <img src="Images/forever-block.png" alt="the forever loop">
+    
+            </div>
+            <div class="if">
+                <h3>If conditional</h3>
+                <h4>Function</h4>
+                <p>If conditions are used to check if something is true or false. If the input is true then the command in
+                    the if
+                    is executed. Scratch has many conditions such as key()pressed?. There are also operator conditions such
+                    as
+                    ()=() these can be used to compare numbers or variables, we'll go over those in a later tutorial.
+                    All conditions are are angular and therefore easy to recognize among the other types of blocks.
+                </p>
+                <h4>Location</h4>
+                <p>The if and if else blocks are located right below the forever loop in the controls category.</p>
+                <img src="Images/if-block.png" alt="the if block">
+    
+            </div>
+            <div class="flag">
+                <h3>When Flag Colicked</h3>
+    
+                <h4>Function</h4>
+                <p>The when flag clicked block is probably the block that every scratch program contains, because this block
+                    tells
+                    the program what to do when the green flaf is clicked, the start button in other words. Once the flag is
+                    clicked everything
+                    under the when flag clicked block will run. This block is a so called hat block which means it
+                    automatically runs all scripts
+                    under it when the action(in this case the green flag is clicke) has occured.
+                </p>
+                <h4>Location</h4>
+                <p>The when flag clicked block can be found as the first block in the events category(yellow blocks).</p>
+                <img src="Images/flag-block.png" alt="the green flag block">
+                <p>Note that I have scratch addons installed so the block you will see will not have cat ears.</p>
+    
+            </div>
+    
+    
+    
+        </div>
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>Here we've touched only five blocks to find out more continue to the next lesson in the course.</p>
+    
+    
+        </div>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="alteca.hashnode.dev/"><p>Hashnode</p></a>
+            <a href="x.com/@Alteca_xyz/"><p>X</p></a>
+            <a href="scratch.mit.edu/@Infinity-Creations/"><p>Scratch</p></a>
+        </div>
+       
+    </footer>
+    <script src="script.js" async defer></script>
+</body>
+</html>
