@@ -312,12 +312,12 @@ p a {
 
 
 .blog li {
-   font-size: 2.4rem;
+   font-size: 2rem;
    color: #fff;
    line-height: 1.5;
    text-align: left;
-   margin-left:7.6em ;
-   margin-right:7.6em ;
+   margin-left: 20%;
+   margin-right: 20%;
  }
  .blog h4 {
    font-size: 2.9rem;
