@@ -33,10 +33,7 @@
    #sandwich {
       display: flex;
    }
-  .blog p {
-   margin-left: 2em;
-   margin-right: 2em;
-  }
+  
   
 }
  * {
@@ -309,8 +306,8 @@ p a {
    color: #fff;
    line-height: 1.5;
    text-align: left;
-   margin-left: 2em;
-   margin-right: 2em;
+   margin-left: 15%;
+   margin-right: 15%;
  }
 
 
