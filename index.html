@@ -2,15 +2,25 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript">
+        (function (window, document, dataLayerName, id) {
+            window[dataLayerName] = window[dataLayerName] || [], window[dataLayerName].push({ start: (new Date).getTime(), event: "stg.start" }); var scripts = document.getElementsByTagName('script')[0], tags = document.createElement('script');
+            function stgCreateCookie(a, b, c) { var d = ""; if (c) { var e = new Date; e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), d = "; expires=" + e.toUTCString(); f = "; SameSite=Strict" } document.cookie = a + "=" + b + d + f + "; path=/" }
+            var isStgDebug = (window.location.href.match("stg_debug") || document.cookie.match("stg_debug")) && !window.location.href.match("stg_disable_debug"); stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
+            var qP = []; dataLayerName !== "dataLayer" && qP.push("data_layer_name=" + dataLayerName), isStgDebug && qP.push("stg_debug"); var qPString = qP.length > 0 ? ("?" + qP.join("&")) : "";
+            tags.async = !0, tags.src = "https://altecaxyz.containers.piwik.pro/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
+            !function (a, n, i) { a[n] = a[n] || {}; for (var c = 0; c < i.length; c++)!function (i) { a[n][i] = a[n][i] || {}, a[n][i].api = a[n][i].api || function () { var a = [].slice.call(arguments, 0); "string" == typeof a[0] && window[dataLayerName].push({ event: n + "." + i + ":" + a[0], parameters: [].slice.call(arguments, 1) }) } }(i[c]) }(window, "ppms", ["tm", "cm"]);
+        })(window, document, 'dataLayer', 'c26d47e1-ca2a-46c6-b5e0-0b4007d3f945');
+    </script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NX0YL17Q68"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX0YL17Q68"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-NX0YL17Q68');
-</script>
+        gtag('config', 'G-NX0YL17Q68');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,32 +37,32 @@
     <header id="homeheader">
         <nav>
 
-            <div class="flex" id="nav" >
+            <div class="flex" id="nav">
                 <div id="logo">
                     <a href="index.html"><img src="Page-Images/BeFunky-design-removebg-preview.png" alt="Logo"
-                        class="logo"></a>
+                            class="logo"></a>
                 </div>
-             <div id="desktop-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                </ul>
-             </div>
-             <div id="mobile-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                </ul>
-             </div>
-                
+                <div id="desktop-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div id="mobile-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                    </ul>
+                </div>
+
                 <div id="sandwich">
                     <a href="javascript:void(0);" onclick="toggleSandwichMenu()">
-                      <img src="Images/menu.svg" alt="hamburger-menu" width="24px"></a>
-                  </div>
+                        <img src="Images/menu.svg" alt="hamburger-menu" width="24px"></a>
+                </div>
             </div>
 
         </nav>
@@ -67,7 +77,7 @@
                 </h4>
                 <a href="blog.html"><button id="ctabtn">Start Reading</button></a>
             </div>
-            
+
         </div>
     </header>
     <main id="home">
@@ -79,7 +89,7 @@
                 projects in the future and am learning JavaScript</p>
 
             <div class="cont">
-               <a href="about.html"><button class="readmore">Read More</button></a>
+                <a href="about.html"><button class="readmore">Read More</button></a>
             </div>
         </section>
         <h2>Blog</h2>
@@ -91,50 +101,71 @@
         <section>
             <h3>Topics</h3>
             <div class="topics">
-            <p>Programming</p>
-            <p>Software Reviews</p>
-            <p>AI</p>
-        </div>
+                <p>Programming</p>
+                <p>Software Reviews</p>
+                <p>AI</p>
+            </div>
 
         </section>
         <section>
             <h3>New Posts</h3>
             <div class="post">
-                <a href="8-best-AItools.html"><h3>8 Best AI Tools you should use</h3></a>
+                <a href="8-best-AItools.html">
+                    <h3>8 Best AI Tools you should use</h3>
+                </a>
                 <div class="desc">A compilation of the best and most useful AI tools for your daily workflow</div>
             </div>
             <div class="post">
-                <a href="7-best-extensions.html"><h3>7 Best Free Chrome Extensions in 2024</h3></a>
+                <a href="7-best-extensions.html">
+                    <h3>7 Best Free Chrome Extensions in 2024</h3>
+                </a>
                 <div class="desc">A compilation of the most needed Chrome extensions out there</div>
             </div>
             <div class="post">
-                <a href="Intro to Scratch.html"><h3>Intro to Scratch</h3></a>
-                <div class="desc">A great beginners guide to Scratch for you to master the basics of the art of making computer programs
+                <a href="Intro to Scratch.html">
+                    <h3>Intro to Scratch</h3>
+                </a>
+                <div class="desc">A great beginners guide to Scratch for you to master the basics of the art of making
+                    computer programs
                 </div>
             </div>
             <div class="post">
-                <a href="Chrome alternatives.html"><h3>Chrome Alternatives</h3></a>
-                <div class="desc">If you're looking for a browser other than Chrome and don't know where to start this is the perfect beginner's guide
+                <a href="Chrome alternatives.html">
+                    <h3>Chrome Alternatives</h3>
+                </a>
+                <div class="desc">If you're looking for a browser other than Chrome and don't know where to start this
+                    is the perfect beginner's guide
                 </div>
             </div>
             <div class="post">
-                <a href="Top-5-Website-builders.html"><h3>Top 5 Website Builders in 2023</h3></a>
-                 <div class="desc">A compilation of the best website builders out there </div>
-             </div>
-             <div class="post">
-                <a href="Best Blogging Platforms for devs.html"><h3>Best Blogging Platforms for Developers</h3></a>
-                <div class="desc">A detailed guide on the best blogging platforms for developers, which one to choose and why</div>
+                <a href="Top-5-Website-builders.html">
+                    <h3>Top 5 Website Builders in 2023</h3>
+                </a>
+                <div class="desc">A compilation of the best website builders out there </div>
             </div>
             <div class="post">
-                <a href="Html tags.html"><h3>All HTML tags explained</h3></a>
-                 <div class="desc">A compilation of the most used HTML tags to give a good idea for what tag to use next </div>
-             </div>
+                <a href="Best Blogging Platforms for devs.html">
+                    <h3>Best Blogging Platforms for Developers</h3>
+                </a>
+                <div class="desc">A detailed guide on the best blogging platforms for developers, which one to choose
+                    and why</div>
+            </div>
             <div class="post">
-                <a href="scratchaddons.html"><h3>Scratch Addons</h3></a>
-                 <div class="desc">A compilation of the best Scratch addons out there to supercharge you productivity</div>
-             </div>
-             <div class="cont">
-             <a href="blog.html"><button class="readmore">See More Posts</button></a>
+                <a href="Html tags.html">
+                    <h3>All HTML tags explained</h3>
+                </a>
+                <div class="desc">A compilation of the most used HTML tags to give a good idea for what tag to use next
+                </div>
+            </div>
+            <div class="post">
+                <a href="scratchaddons.html">
+                    <h3>Scratch Addons</h3>
+                </a>
+                <div class="desc">A compilation of the best Scratch addons out there to supercharge you productivity
+                </div>
+            </div>
+            <div class="cont">
+                <a href="blog.html"><button class="readmore">See More Posts</button></a>
             </div>
         </section>
         <h2>Social Media</h2>
@@ -147,20 +178,26 @@
             <p><a href="https://alteca.hashnode.dev">Alteca</a></p>
         </section>
 
-        
+
 
 
 
     </main>
     <footer>
         <div class="social">
-            <a href="https://alteca.hashnode.dev/"><p>Hashnode</p></a>
-            <a href="https://x.com/@Alteca_xyz/"><p>X</p></a>
-            <a href="https://scratch.mit.edu/@Infinity-Creations/"><p>Scratch</p></a>
+            <a href="https://alteca.hashnode.dev/">
+                <p>Hashnode</p>
+            </a>
+            <a href="https://x.com/@Alteca_xyz/">
+                <p>X</p>
+            </a>
+            <a href="https://scratch.mit.edu/@Infinity-Creations/">
+                <p>Scratch</p>
+            </a>
         </div>
-       
+
     </footer>
-<script src="script.js" async defer></script>
+    <script src="script.js" async defer></script>
 </body>
 
 </html>
