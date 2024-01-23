@@ -220,7 +220,7 @@ p a {
  } */
  h1 {
     font-size: 5rem;
-    font-family: 'Mokoto';
+    font-family: 'Mokoto', 'Railway', sans-serif, Arial;
     background: -webkit-linear-gradient(#0030ff, #bc00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
