@@ -313,9 +313,11 @@ p a {
    margin-right: 19%;
  }
 
-
 .blog li {
-   font-size: 2rem;
+
+}
+.blog li {
+   font-size: 1.5rem;
    color: #fff;
    line-height: 1.5;
    text-align: left;
