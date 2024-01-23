@@ -33,7 +33,10 @@
    #sandwich {
       display: flex;
    }
-  
+  .blog p {
+   margin-left: 10%;
+   margin-right: 10%;
+  }
   
 }
  * {
@@ -198,7 +201,7 @@ p a {
    background: -webkit-linear-gradient(#0030ff, #bc00ff);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   font-size: 1.7rem;
+   font-size: 1.5rem;
 }
  section {
     padding: 2em 0;
@@ -302,12 +305,12 @@ p a {
 
 }
  .blog p {
-   font-size: 2rem;
+   font-size: 1.5rem;
    color: #fff;
    line-height: 1.5;
    text-align: left;
-   margin-left: 15%;
-   margin-right: 15%;
+   margin-left: 19%;
+   margin-right: 19%;
  }
 
 
